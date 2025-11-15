@@ -14,7 +14,7 @@ const pool = new Pool({
 });
 
 const app = express();
-app.use(cors( { origin:["http://localhost:3000","https://ab-two-self.vercel.app/"]}
+app.use(cors( { origin:["http://localhost:3000","j-two-iota.vercel.app"]}
 ));
 app.use(express.json());
 app.use(express.static("client"));
@@ -451,3 +451,4 @@ app.get("/api/invoice/:orderId", async (req, res) => {
 });
 
 export default app;
+
